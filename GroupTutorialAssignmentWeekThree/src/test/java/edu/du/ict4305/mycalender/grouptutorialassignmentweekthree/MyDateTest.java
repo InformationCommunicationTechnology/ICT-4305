@@ -37,7 +37,7 @@ public class MyDateTest {
      */
     @Test
     public void testGetDay() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
