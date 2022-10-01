@@ -1,7 +1,7 @@
 /**
  *
  * @Course: ICT 4305
- * @File:
+ * @File: MyDate.java
  * @Instructor: Dr. Sherri Maciosek
  *
  */
@@ -18,12 +18,12 @@ public class MyDate {
     /* This private data member holds the calculated Julian number for this MyDate */
     private static int julianNumber;
     private int initday;
-    private int date;
     private int initmonth;
     private int inityear;
     private static Integer iYear;
     private static boolean isLeapYear;
     private static boolean isValidDay;
+    private static boolean isMonthValid;
     private static int lastDayOfMonth;
     private static int[] jNumber;
     private static int l;
@@ -36,7 +36,6 @@ public class MyDate {
      * (epoch time).
      */
     public MyDate() {
-        date = 111970;
     }
 
     /**
@@ -61,12 +60,15 @@ public class MyDate {
         initday = day;
         initmonth = month;
         inityear = year;
-        julianNumber = toJulianNumber(day, month, year);
+    }
+
+    public void julianNumber() {
+        julianNumber = toJulianNumber(getDay(), getMonth(), getYear());
         System.out.println("Julian Number is " + julianNumber);
         jNumber = fromJulianNumber(julianNumber);
         System.out.print("The date is ");
-        for (date = 0; date < jNumber.length; date++) {
-            System.out.print("/" + jNumber[date]);
+        for (int i = 0; i < jNumber.length; i++) {
+            System.out.print("/" + jNumber[i]);
         }
         System.out.println();
     }
@@ -77,7 +79,7 @@ public class MyDate {
      *
      * @return
      */
-    public int getDay() {
+    public final int getDay() {
         return initday;
     }
 
@@ -87,10 +89,7 @@ public class MyDate {
      *
      * @return
      */
-    public int getMonth() {
-        if (12 <= initmonth && initmonth > 0) {
-            throw new IllegalArgumentException("Month is not valid!");
-        }
+    public final int getMonth() {
         return initmonth;
     }
 
@@ -100,7 +99,7 @@ public class MyDate {
      *
      * @return
      */
-    public int getYear() {
+    public final int getYear() {
         return inityear;
     }
 
@@ -131,13 +130,15 @@ public class MyDate {
         iYear = year;
         if (month == 1) {
             lastDayOfMonth = 31;
-        } else if (2 == month && (!(iYear.toString().endsWith("00")) == true && year % 4 == 0)) {
-            lastDayOfMonth = 29;
-        }else if (2 == month && (year % 400 == 0 && year % 100 == 0)){
-            lastDayOfMonth = 29;
-        }else if (2 == month && (year % 100 == 0)){
-            lastDayOfMonth = 28;
-        }else if (month == 3) {
+        } else if (2 == month) {
+            if (!(iYear.toString().endsWith("00")) == true && year % 4 == 0) {
+                lastDayOfMonth = 29;
+            } else if (year % 400 == 0 && year % 100 == 0) {
+                lastDayOfMonth = 29;
+            } else {
+                lastDayOfMonth = 28;
+            }
+        } else if (month == 3) {
             lastDayOfMonth = 31;
         } else if (month == 4) {
             lastDayOfMonth = 30;
@@ -169,7 +170,7 @@ public class MyDate {
      * @param day
      * @return
      */
-    public static boolean isValidDay(int month, int day) {
+    public static boolean isDayValid(int month, int day) {
         if (month == 1 && day <= 31 && day > 0) {
             isValidDay = true;
         } else if (month == 2 && day <= 29 && day > 0) {
@@ -198,6 +199,16 @@ public class MyDate {
             throw new IllegalArgumentException("Day is not valid!");
         }
         return isValidDay;
+    }
+
+    public static boolean isMonthValid(int month) {
+        if (month <= 12) {
+            isMonthValid = true;
+        } else {
+            throw new IllegalArgumentException("Month is not valid!");
+        }
+
+        return isMonthValid;
     }
 
     /* This internal method returns the calculated Julian number for the provided day, month, year

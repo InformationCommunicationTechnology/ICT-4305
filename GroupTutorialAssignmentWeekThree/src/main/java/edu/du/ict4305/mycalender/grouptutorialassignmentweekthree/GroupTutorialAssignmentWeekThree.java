@@ -1,7 +1,7 @@
 /**
  *
  * @Course: ICT 4305
- * @File:
+ * @File: GroupTutorialAssignmentWeekThree.java
  * @Instructor: Dr. Sherri Maciosek
  *
  */
@@ -19,13 +19,10 @@ public class GroupTutorialAssignmentWeekThree {
 
     private static MyDate date;
     private static MyDate defaultDate;
-    private static MyDate existingDate;
-    private static int getDay;
-    private static int getMonth;
-    private static int getYear;
     private static int getLastDayOfMonth;
     private static boolean isLeapYear;
-    private static boolean isValidDay;
+    private static boolean isDayValid;
+    private static boolean isMonthValid;
     private static int initDay;
     private static int initMonth;
     private static int initYear;
@@ -45,37 +42,39 @@ public class GroupTutorialAssignmentWeekThree {
         initYear = year.nextInt();
 
         defaultDate = new MyDate();
-        existingDate = new MyDate(defaultDate);
         date = new MyDate(initDay, initMonth, initYear);
 
-        getDay = date.getDay();
-        getYear = date.getYear();
+        // Check if the day is valid
         try {
-            getMonth = date.getMonth();
-            getLastDayOfMonth = MyDate.getLastDayOfMonth(initMonth, initYear);
+            isDayValid = MyDate.isDayValid(initDay, initMonth);
+            
         } catch (Exception ex) {
             System.out.println(ex);
         }
 
-        System.out.println("The last day of the month is " + getLastDayOfMonth);
+        // Check if the month is valid        
+        try {
+            isMonthValid = MyDate.isMonthValid(initMonth);
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+        if (isMonthValid == true && isDayValid == true) {
+            date.julianNumber();
+        }
+
+        // Check the last day of the month  
+        try {
+            getLastDayOfMonth = MyDate.getLastDayOfMonth(initMonth, initYear);
+            System.out.println("The last day of the month is : " + getLastDayOfMonth);
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
 
         isLeapYear = MyDate.isLeapYear(initYear);
         if (isLeapYear == true) {
             System.out.println("It's leap year for sure!!");
         } else {
             System.out.println("It's not leap year!!");
-        }
-
-        try {
-            getMonth = date.getMonth();
-            isValidDay = MyDate.isValidDay(initMonth, initDay);
-            if (isValidDay == true) {
-                System.out.println("The day is valid");
-            } else {
-                System.out.println("Please enter a valid day");
-            }
-        } catch (Exception ex) {
-            System.out.println(ex);
         }
 
     }
