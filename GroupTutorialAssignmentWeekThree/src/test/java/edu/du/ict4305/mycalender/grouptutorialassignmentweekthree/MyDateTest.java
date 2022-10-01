@@ -37,7 +37,7 @@ public class MyDateTest {
      */
     @Test
     public void testGetDay() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -52,7 +52,7 @@ public class MyDateTest {
      */
     @Test
     public void testGetMonth() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -68,7 +68,7 @@ public class MyDateTest {
      */
     @Test
     public void testGetYear() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -100,7 +100,7 @@ public class MyDateTest {
     @Test
     public void testGetLastDayOfMonth() {
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -142,7 +142,7 @@ public class MyDateTest {
      */
     @Test
     public void testIsDayValid() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             month = getRandomMonth.nextInt(12) + 1;
             if (month == 1) {
                 day = getRandomDay.nextInt(31) + 1;
