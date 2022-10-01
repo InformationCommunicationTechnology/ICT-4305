@@ -130,8 +130,8 @@ public class MyDateTest {
                 assertEquals(31, MyDate.getLastDayOfMonth(month, year));
             } else {
                 assertThrows(IllegalArgumentException.class, () -> {
-                MyDate.getLastDayOfMonth(45, year);
-            });
+                    MyDate.getLastDayOfMonth(45, year);
+                });
             }
 
         }
@@ -203,13 +203,6 @@ public class MyDateTest {
                 MyDate.isDayValid(month, day);
             });
         }
-    }
-
-    /**
-     * Test of julianNumber method, of class MyDate.
-     */
-    @Test
-    public void testJulianNumber() {
     }
 
 }
