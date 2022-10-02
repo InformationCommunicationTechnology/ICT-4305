@@ -15,8 +15,8 @@ package edu.du.ict4305.grouptutorialassignmentfour;
  */
 public class Employee {
 
-    private String name;
-    private double salary;
+    private final String name;
+    private final double salary;
     double newSalary;
     private double calcSalary;
 

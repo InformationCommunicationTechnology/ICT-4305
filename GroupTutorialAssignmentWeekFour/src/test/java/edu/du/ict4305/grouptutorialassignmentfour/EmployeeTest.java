@@ -18,17 +18,13 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class EmployeeTest {
 
-    private String name;
-    private double salary;
-    private double percentSalary;
-    private boolean isNameEmpty;
-    private boolean isSalaryValid;
+    private final String name;
+    private final double salary;
     private Employee emp;
 
     public EmployeeTest() {
         name = "luther";
         salary = 400.0;
-        percentSalary = 0.0;
     }
 
     /**
@@ -47,18 +43,6 @@ public class EmployeeTest {
     public void testGetSalary() {
         emp = new Employee(name, salary);
         assertEquals(salary, emp.getSalary());
-    }
-
-    /**
-     * Test of raiseSalary method, of class Employee.
-     */
-    @Test
-    public void testRaiseSalary() {
-        emp = new Employee(name, 0);
-        assertThrows(IllegalArgumentException.class, () -> {
-            emp.raiseSalary(0);
-        });
-
     }
 
     /**

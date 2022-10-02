@@ -15,11 +15,6 @@ package edu.du.ict4305.grouptutorialassignmentfour;
  */
 public class GroupTutorialAssignmentWeekFour {
 
-    private static String name;
-    private static double salary;
-    private static double getSalary;
-    private static boolean validateName;
-    private static boolean validateSalary;
     private static Employee emp;
     private static Manager man;
 
@@ -28,7 +23,7 @@ public class GroupTutorialAssignmentWeekFour {
 
         //Validating the name
         try {
-            validateName = emp.isNameEmpty();
+            emp.isNameEmpty();
 
         } catch (Exception ex) {
             System.out.println(ex);
@@ -36,7 +31,7 @@ public class GroupTutorialAssignmentWeekFour {
 
         //Validating the salary
         try {
-            validateSalary = emp.isSalaryValid();
+            emp.isSalaryValid();
 
         } catch (Exception ex) {
             System.out.println(ex);
