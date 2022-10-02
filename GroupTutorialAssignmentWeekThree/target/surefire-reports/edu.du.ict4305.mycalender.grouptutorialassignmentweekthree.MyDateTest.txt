@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.du.ict4305.mycalender.grouptutorialassignmentweekthree.MyDateTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in edu.du.ict4305.mycalender.grouptutorialassignmentweekthree.MyDateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in edu.du.ict4305.mycalender.grouptutorialassignmentweekthree.MyDateTest
