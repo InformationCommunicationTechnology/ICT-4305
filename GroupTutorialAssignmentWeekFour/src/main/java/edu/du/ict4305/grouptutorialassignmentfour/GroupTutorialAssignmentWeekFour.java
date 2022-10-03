@@ -19,7 +19,7 @@ public class GroupTutorialAssignmentWeekFour {
     private static Manager man;
 
     public static void main(String[] args) {
-        emp = new Employee("", 0);
+        emp = new Employee("luther", 4000);
 
         //Validating the name
         try {
