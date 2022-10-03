@@ -31,7 +31,7 @@ public class Manager extends Employee {
         if (byPercent <= 0 || isSalaryValid() == false) {
             throw new IllegalArgumentException("Please enter a valid percent salary");
         } else {
-            calcManagerSalary = getSalary() * 0.01;
+            calcManagerSalary = getSalary() * byPercent;
             newManagerSalary = calcManagerSalary + getSalary();
             System.out.println("Your new salary is " + newManagerSalary);
         }

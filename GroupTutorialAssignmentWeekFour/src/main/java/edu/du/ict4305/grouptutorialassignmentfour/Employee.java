@@ -22,12 +22,12 @@ public class Employee {
 
     /**
      *
-     * @param myName
-     * @param mySalary
+     * @param name
+     * @param salary
      */
-    public Employee(String myName, double mySalary) {
-        name = myName;
-        salary = mySalary;
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
 
     }
 
@@ -64,7 +64,7 @@ public class Employee {
         if (getSalary() <= 0) {
             throw new IllegalArgumentException("Please enter a valid salary");
         } else {
-            return false;
+            return true;
         }
     }
 
