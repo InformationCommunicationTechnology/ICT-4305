@@ -66,8 +66,8 @@ public class EmployeeTest {
     @Test
     public void testIsSalaryValid() {
         emp = new Employee(name, salary);
-        assertFalse(emp.isSalaryValid());
-        if (emp.isSalaryValid() == true) {
+        assertTrue(emp.isSalaryValid());
+        if (emp.isSalaryValid() == false) {
             assertThrows(IllegalArgumentException.class, () -> {
                 emp.isSalaryValid();
             });
