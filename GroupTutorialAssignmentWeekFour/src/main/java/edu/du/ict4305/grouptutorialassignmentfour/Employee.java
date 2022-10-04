@@ -70,7 +70,7 @@ public class Employee {
        * @param byPercent
        */
       public void raiseSalary(double byPercent) {
-            if (byPercent <= 0 || isSalaryValid() == false) {
+            if (byPercent <= 0 || !isSalaryValid()) {
                   throw new IllegalArgumentException("Please enter a valid percent salary");
             } else {
                   double calcSalary = getSalary() * byPercent;
