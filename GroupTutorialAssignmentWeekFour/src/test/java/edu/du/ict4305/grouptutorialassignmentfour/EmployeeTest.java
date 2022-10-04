@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @Date:
+ * @Date: 10/01/2022
  * @author lutherchikumba
  *
  */
@@ -51,7 +51,7 @@ public class EmployeeTest {
       public void testIsNameEmpty() {
             emp = new Employee(name, salary);
             assertFalse(emp.isNameEmpty());
-            if (emp.isNameEmpty() == true) {
+            if (emp.isNameEmpty()) {
                   assertThrows(IllegalArgumentException.class, () -> {
                         emp.isNameEmpty();
                   });
@@ -65,8 +65,8 @@ public class EmployeeTest {
       @Test
       public void testIsSalaryValid() {
             emp = new Employee(name, salary);
-            assertFalse(emp.isSalaryValid());
-            if (emp.isSalaryValid() == true) {
+            assertTrue(emp.isSalaryValid());
+            if (!emp.isSalaryValid()) {
                   assertThrows(IllegalArgumentException.class, () -> {
                         emp.isSalaryValid();
                   });

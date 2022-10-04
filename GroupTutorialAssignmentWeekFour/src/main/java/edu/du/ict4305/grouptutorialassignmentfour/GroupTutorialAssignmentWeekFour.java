@@ -7,7 +7,7 @@ package edu.du.ict4305.grouptutorialassignmentfour;
 
 /**
  *
- * @Date:
+ * @Date: 10/01/2022
  * @author lutherchikumba
  *
  */
@@ -17,7 +17,7 @@ public class GroupTutorialAssignmentWeekFour {
       private static Manager man;
 
       public static void main(String[] args) {
-            emp = new Employee("", 0);
+            emp = new Employee("luther", 400.0);
 
             //Validating the name
             try {

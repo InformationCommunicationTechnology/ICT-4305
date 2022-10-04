@@ -7,7 +7,7 @@ package edu.du.ict4305.grouptutorialassignmentfour;
 
 /**
  *
- * @Date:
+ * @Date: 10/01/2022
  * @author lutherchikumba
  *
  */
@@ -16,22 +16,21 @@ public class Employee {
       private final String name;
       private final double salary;
       double newSalary;
-      private double calcSalary;
 
       /**
        *
-       * @param myName
-       * @param mySalary
+       * @param name
+       * @param salary
        */
-      public Employee(String myName, double mySalary) {
-            name = myName;
-            salary = mySalary;
+      public Employee(String name, double salary) {
+            this.name = name;
+            this.salary = salary;
 
       }
 
       /**
        *
-       * @return
+       * @return name
        */
       public String getName() {
             return name;
@@ -39,7 +38,7 @@ public class Employee {
 
       /**
        *
-       * @return
+       * @return boolean
        */
       public boolean isNameEmpty() {
             if (getName() == null || getName().isEmpty()) {
@@ -52,7 +51,7 @@ public class Employee {
 
       /**
        *
-       * @return
+       * @return salary
        */
       public double getSalary() {
             return salary;
@@ -62,7 +61,7 @@ public class Employee {
             if (getSalary() <= 0) {
                   throw new IllegalArgumentException("Please enter a valid salary");
             } else {
-                  return false;
+                  return true;
             }
       }
 
@@ -74,7 +73,7 @@ public class Employee {
             if (byPercent <= 0 || isSalaryValid() == false) {
                   throw new IllegalArgumentException("Please enter a valid percent salary");
             } else {
-                  calcSalary = getSalary() * byPercent;
+                  double calcSalary = getSalary() * byPercent;
                   newSalary = calcSalary + getSalary();
                   System.out.println("Your new salary is " + newSalary);
             }
