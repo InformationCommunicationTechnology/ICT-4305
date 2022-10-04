@@ -7,14 +7,11 @@ package edu.du.ict4305.grouptutorialassignmentfour;
 
 /**
  *
- * @Date:
+ * @Date: 10/01/2022
  * @author lutherchikumba
  *
  */
 public class Manager extends Employee {
-
-      private double calcManagerSalary;
-      private double newManagerSalary;
 
       public Manager(String name, double salary) {
             super(name, salary);
@@ -26,11 +23,11 @@ public class Manager extends Employee {
        */
       @Override
       public void raiseSalary(double byPercent) {
-            if (byPercent <= 0 || isSalaryValid() == false) {
+            if (byPercent <= 0 || !isSalaryValid()) {
                   throw new IllegalArgumentException("Please enter a valid percent salary");
             } else {
-                  calcManagerSalary = getSalary() * 0.01;
-                  newManagerSalary = calcManagerSalary + getSalary();
+                  double calcManagerSalary = getSalary() * byPercent;
+                  double newManagerSalary = calcManagerSalary + getSalary();
                   System.out.println("Your new salary is " + newManagerSalary);
             }
 
