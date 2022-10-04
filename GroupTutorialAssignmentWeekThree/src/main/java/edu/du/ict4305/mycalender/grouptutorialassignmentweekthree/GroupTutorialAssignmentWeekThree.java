@@ -47,7 +47,7 @@ public class GroupTutorialAssignmentWeekThree {
         // Check if the day is valid
         try {
             isDayValid = MyDate.isDayValid(initDay, initMonth);
-            
+
         } catch (Exception ex) {
             System.out.println(ex);
         }

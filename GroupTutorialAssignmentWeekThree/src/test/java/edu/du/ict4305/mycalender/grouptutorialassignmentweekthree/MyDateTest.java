@@ -37,8 +37,8 @@ public class MyDateTest {
      */
     @Test
     public void testGetDay() {
-        for (int i = 0; i < 1000; i++) {
-            day = 40;
+        for (int i = 0; i < 100; i++) {
+            day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
             date = new MyDate(day, month, year);
@@ -52,7 +52,7 @@ public class MyDateTest {
      */
     @Test
     public void testGetMonth() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -68,7 +68,7 @@ public class MyDateTest {
      */
     @Test
     public void testGetYear() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -100,7 +100,7 @@ public class MyDateTest {
     @Test
     public void testGetLastDayOfMonth() {
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             day = getRandomDay.nextInt(31) + 1;
             month = getRandomMonth.nextInt(12) + 1;
             year = getRandomYear.nextInt(2022) + 1;
@@ -130,8 +130,8 @@ public class MyDateTest {
                 assertEquals(31, MyDate.getLastDayOfMonth(month, year));
             } else {
                 assertThrows(IllegalArgumentException.class, () -> {
-                MyDate.getLastDayOfMonth(45, year);
-            });
+                    MyDate.getLastDayOfMonth(45, year);
+                });
             }
 
         }
@@ -142,7 +142,7 @@ public class MyDateTest {
      */
     @Test
     public void testIsDayValid() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             month = getRandomMonth.nextInt(12) + 1;
             if (month == 1) {
                 day = getRandomDay.nextInt(31) + 1;
@@ -203,13 +203,6 @@ public class MyDateTest {
                 MyDate.isDayValid(month, day);
             });
         }
-    }
-
-    /**
-     * Test of julianNumber method, of class MyDate.
-     */
-    @Test
-    public void testJulianNumber() {
     }
 
 }
