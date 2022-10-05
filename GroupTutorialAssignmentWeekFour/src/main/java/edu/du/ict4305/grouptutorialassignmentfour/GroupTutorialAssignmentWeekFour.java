@@ -37,7 +37,7 @@ public class GroupTutorialAssignmentWeekFour {
 
             //Raise the salary
             try {
-                  emp.raiseSalary(1.0);
+                  emp.raiseSalary(.05);
 
             } catch (Exception ex) {
                   System.out.println(ex);
@@ -47,7 +47,17 @@ public class GroupTutorialAssignmentWeekFour {
 
             //Raise manager's salary
             try {
-                  man.raiseSalary(4.0);
+                  man.raiseSalary(.01);
+
+            } catch (Exception ex) {
+                  System.out.println(ex);
+            }
+
+            CompositionManager  compositionManager = new CompositionManager("luther", 400);
+
+            //Raise manager's salary using Composition instead of Inheritance
+            try {
+                  compositionManager.raiseSalary(.50);
 
             } catch (Exception ex) {
                   System.out.println(ex);

@@ -33,7 +33,7 @@ public class Employee {
        * @return name
        */
       public String getName() {
-            return name;
+            return this.name;
       }
 
       /**
@@ -54,7 +54,7 @@ public class Employee {
        * @return salary
        */
       public double getSalary() {
-            return salary;
+            return this.salary;
       }
 
       public boolean isSalaryValid() {
