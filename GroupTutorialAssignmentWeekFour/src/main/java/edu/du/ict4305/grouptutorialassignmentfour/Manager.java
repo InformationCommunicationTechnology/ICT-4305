@@ -23,7 +23,7 @@ public class Manager extends Employee {
        */
       @Override
       public void raiseSalary(double byPercent) {
-            if (byPercent <= 0 || !isSalaryValid()) {
+            if (byPercent <= 0) {
                   throw new IllegalArgumentException("Please enter a valid percent salary");
             } else {
                   double calcManagerSalary = getSalary() * byPercent;
