@@ -25,6 +25,10 @@ public class ManagerTest {
        */
       @Test
       public void testRaiseSalary() {
+          Manager manager = new Manager("luther", 50);
+            assertThrows(IllegalArgumentException.class, () -> {
+            manager.raiseSalary(0);
+        });
       }
 
 }
