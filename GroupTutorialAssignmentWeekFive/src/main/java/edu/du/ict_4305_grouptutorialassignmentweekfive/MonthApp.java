@@ -25,7 +25,7 @@ public class MonthApp {
             Month<String> monthName = new Month<>(); // Note: the type is inferred
 
             System.out.println("Example of setting values");
-            for (int month = 1; month < monthNumberArray.length+1; month++) {
+            for (int month = 1; month < monthNumberArray.length + 1; month++) {
                   if (month == 1) {
                         monthNumber.setMonth(month);
                         monthName.setMonth("January");
@@ -78,9 +78,8 @@ public class MonthApp {
                   }
 
             }
-
             System.out.println("Example of assigning values to array elements");
-            for ( int month = 0; month < monthNumberArray.length; month++) {
+            for (int month = 0; month < monthNumberArray.length; month++) {
                   if (month == 1) {
                         monthNumber.setMonth(1);
                         monthName.setMonth("January");

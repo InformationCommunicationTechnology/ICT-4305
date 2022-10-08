@@ -6,27 +6,27 @@
 package edu.du.ict_4305_grouptutorialassignmentweekfive;
 
 /**
- *
- * @Date: 10/8/22
  * @author lutherchikumba
- *
+ * @Date: 10/8/22
  */
-public class Month <T>{
-    private T month;
-    // constructors
-    public Month() {
+public class Month<T> {
+      private T month;
 
-    }
-    public Month(T month) {
-        this.month = month;
-    }
+      // constructors
+      public Month() {
 
-    public T getMonth() {
-        return month;
-    }
+      }
 
-    public void setMonth(T month) {
-        this.month = month;
-    }
+      public Month(T month) {
+            this.month = month;
+      }
+
+      public T getMonth() {
+            return month;
+      }
+
+      public void setMonth(T month) {
+            this.month = month;
+      }
 
 }
