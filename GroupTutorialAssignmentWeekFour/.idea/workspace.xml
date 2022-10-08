@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0db3e7a-0df3-467a-a4f5-3f70001f06a6" name="Changes" comment="" />
+    <list default="true" id="c0db3e7a-0df3-467a-a4f5-3f70001f06a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../GroupTutorialAssignmentWeekFive/src/main/java/edu/du/ict_4305_grouptutorialassignmentweekfive/Month.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupTutorialAssignmentWeekFive/src/main/java/edu/du/ict_4305_grouptutorialassignmentweekfive/MonthApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupTutorialAssignmentWeekThree/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupTutorialAssignmentWeekThree/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupTutorialAssignmentWeekThree/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupTutorialAssignmentWeekThree/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/du/ict4305/grouptutorialassignmentfour/EmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/du/ict4305/grouptutorialassignmentfour/EmployeeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/du/ict4305/grouptutorialassignmentfour/ManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/du/ict4305/grouptutorialassignmentfour/ManagerTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,18 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.du.ict4305.grouptutorialassignmentfour" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,6 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1664911637855</updated>
       <workItem from="1664911639045" duration="713000" />
+      <workItem from="1665250470636" duration="13000" />
+      <workItem from="1665255828295" duration="417000" />
     </task>
     <servers />
   </component>
