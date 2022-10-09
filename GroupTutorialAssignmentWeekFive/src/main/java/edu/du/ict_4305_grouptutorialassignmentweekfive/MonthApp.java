@@ -26,7 +26,7 @@ public class MonthApp {
             // creating values
             Month<Integer> monthNumber = new Month<>();
             Month<String> monthName = new Month<>(); // Note: the type is inferred
-
+            // define ArrayLists that can hold Month objects
             ArrayList<Month> monthNumberArrayList = new ArrayList<>();
             ArrayList<Month> monthNameArrayList = new ArrayList<>();
 
