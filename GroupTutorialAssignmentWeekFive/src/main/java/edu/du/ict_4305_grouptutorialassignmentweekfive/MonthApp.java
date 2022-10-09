@@ -196,8 +196,8 @@ public class MonthApp {
             ;
             monthNameArray[11] = new Month<>("December");
 
-            for (int i = 0; i < monthNumberArray.length; i++) {
-                  System.out.println(monthNumberArray[i].getMonth() + " = " + monthNameArray[i].getMonth());
+            for (int month = 0; month < monthNumberArray.length; month++) {
+                  System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
             }
 
       }
