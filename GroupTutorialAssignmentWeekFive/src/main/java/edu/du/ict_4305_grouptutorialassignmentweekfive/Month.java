@@ -17,16 +17,24 @@ public class Month<T> {
 
       }
 
+      /**
+       * @param month
+       */
       public Month(T month) {
             this.month = month;
       }
 
+      /**
+       * @return
+       */
       public T getMonth() {
             return month;
       }
 
+      /**
+       * @param month
+       */
       public void setMonth(T month) {
             this.month = month;
       }
-
 }

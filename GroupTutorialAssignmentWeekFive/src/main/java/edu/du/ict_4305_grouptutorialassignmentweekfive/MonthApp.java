@@ -18,7 +18,6 @@ public class MonthApp {
       public MonthApp() {
 
       }
-
       public static void main(String[] args) {
             // define arrays that can hold Month objects
             Month<Integer>[] monthNumberArray = new Month[12];  // ignore warning
