@@ -27,137 +27,49 @@ public class MonthApp {
             Month<Integer> monthNumber = new Month<>();
             Month<String> monthName = new Month<>(); // Note: the type is inferred
 
-//            System.out.println("Example of setting values");
-//            for (int month = 1; month < monthNumberArray.length + 1; month++) {
-//                  if (month == 1) {
-//                        monthNumber.setMonth(month);
-//                        monthName.setMonth("January");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 2) {
-//                        monthNumber.setMonth(month);
-//                        monthName.setMonth("February");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 3) {
-//                        monthNumber.setMonth(3);
-//                        monthName.setMonth("March");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 4) {
-//                        monthNumber.setMonth(4);
-//                        monthName.setMonth("April");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 5) {
-//                        monthNumber.setMonth(5);
-//                        monthName.setMonth("May");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 6) {
-//                        monthNumber.setMonth(6);
-//                        monthName.setMonth("June");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 7) {
-//                        monthNumber.setMonth(7);
-//                        monthName.setMonth("July");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 8) {
-//                        monthNumber.setMonth(8);
-//                        monthName.setMonth("August");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 9) {
-//                        monthNumber.setMonth(9);
-//                        monthName.setMonth("September");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 10) {
-//                        monthNumber.setMonth(10);
-//                        monthName.setMonth("October");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else if (month == 11) {
-//                        monthNumber.setMonth(11);
-//                        monthName.setMonth("November");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  } else {
-//
-//                        monthNumber.setMonth(12);
-//                        monthName.setMonth("December");
-//                        System.out.println(monthNumber.getMonth() + " = " + monthName.getMonth());
-//                  }
-//
-//            }
-//            System.out.println("Example of assigning values to array elements");
-//            for (int month = 0; month < monthNumberArray.length; month++) {
-//                  if (month == 1) {
-//                        monthNumber.setMonth(1);
-//                        monthName.setMonth("January");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//
-//                  } else if (month == 2) {
-//                        monthNumber.setMonth(2);
-//                        monthName.setMonth("February");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 3) {
-//                        monthNumber.setMonth(3);
-//                        monthName.setMonth("March");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 4) {
-//                        monthNumber.setMonth(4);
-//                        monthName.setMonth("April");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 5) {
-//                        monthNumber.setMonth(5);
-//                        monthName.setMonth("May");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 6) {
-//                        monthNumber.setMonth(6);
-//                        monthName.setMonth("June");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 7) {
-//                        monthNumber.setMonth(7);
-//                        monthName.setMonth("July");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 8) {
-//                        monthNumber.setMonth(8);
-//                        monthName.setMonth("August");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 9) {
-//                        monthNumber.setMonth(9);
-//                        monthName.setMonth("September");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 10) {
-//                        monthNumber.setMonth(10);
-//                        monthName.setMonth("October");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else if (month == 11) {
-//                        monthNumber.setMonth(11);
-//                        monthName.setMonth("November");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  } else {
-//                        monthNumber.setMonth(12);
-//                        monthName.setMonth("December");
-//                        monthNumberArray[month] = monthNumber;
-//                        monthNameArray[month] = monthName;
-//                        System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
-//                  }
-//            }
+            ArrayList<Month> monthNumberArrayList = new ArrayList<>();
+            ArrayList<Month> monthNameArrayList = new ArrayList<>();
+
+            monthNumberArrayList.add(new Month(1));
+            monthNameArrayList.add(new Month("January"));
+
+            monthNumberArrayList.add(new Month(2));
+            monthNameArrayList.add(new Month("February"));
+
+            monthNumberArrayList.add(new Month(3));
+            monthNameArrayList.add(new Month("March"));
+
+            monthNumberArrayList.add(new Month(4));
+            monthNameArrayList.add(new Month("April"));
+
+            monthNumberArrayList.add(new Month(5));
+            monthNameArrayList.add(new Month("May"));
+
+            monthNumberArrayList.add(new Month(6));
+            monthNameArrayList.add(new Month("June"));
+
+            monthNumberArrayList.add(new Month(7));
+            monthNameArrayList.add(new Month("July"));
+
+            monthNumberArrayList.add(new Month(8));
+            monthNameArrayList.add(new Month("August"));
+
+            monthNumberArrayList.add(new Month(9));
+            monthNameArrayList.add(new Month("September"));
+
+            monthNumberArrayList.add(new Month(10));
+            monthNameArrayList.add(new Month("October"));
+
+            monthNumberArrayList.add(new Month(11));
+            monthNameArrayList.add(new Month("November"));
+
+            monthNumberArrayList.add(new Month(12));
+            monthNameArrayList.add(new Month("December"));
+
+            System.out.println("Example of setting values");
+            for (int i = 0; i < monthNameArrayList.size(); i++) {
+                  System.out.println(monthNumberArrayList.get(i).getMonth() + " = " + monthNameArrayList.get(i).getMonth());
+            }
 
             monthNumberArray[0] = new Month<>(1);
             monthNameArray[0] = new Month<>("January");
@@ -193,9 +105,9 @@ public class MonthApp {
             monthNameArray[10] = new Month<>("November");
 
             monthNumberArray[11] = new Month<>(12);
-            ;
             monthNameArray[11] = new Month<>("December");
 
+            System.out.println("Example of assigning values to array elements");
             for (int month = 0; month < monthNumberArray.length; month++) {
                   System.out.println(monthNumberArray[month].getMonth() + " = " + monthNameArray[month].getMonth());
             }
