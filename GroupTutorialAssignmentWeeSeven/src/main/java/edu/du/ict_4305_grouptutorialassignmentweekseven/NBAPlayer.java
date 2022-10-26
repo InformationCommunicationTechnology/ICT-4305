@@ -12,23 +12,28 @@ package edu.du.ict_4305_grouptutorialassignmentweekseven;
  *
  */
 public class NBAPlayer implements Player{
+    private final String name;
+    private final int stats;
+    private  final String sport;
 
-      public NBAPlayer() {
-
+      public NBAPlayer(String name, int stats, String sport) {
+          this.name = name;
+          this.stats = stats;
+          this.sport = sport;
       }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public int getStats() {
-        return 0;
+        return stats;
     }
 
     @Override
     public String getSport() {
-        return null;
+        return sport;
     }
 }

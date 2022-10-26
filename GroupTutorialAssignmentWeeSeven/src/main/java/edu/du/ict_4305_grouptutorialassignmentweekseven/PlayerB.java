@@ -16,6 +16,11 @@ abstract class PlayerB extends NFLPlayer{
     public String name;
     public int stats;
     public String sport;
+
+    public PlayerB(String name, int stats, String sport) {
+        super(name, stats, sport);
+    }
+
     public String getNameA()
 
     {
