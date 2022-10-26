@@ -11,7 +11,7 @@ package edu.du.ict_4305_grouptutorialassignmentweekseven;
  * @author lutherchikumba
  *
  */
-public class NBAPlayer implements Player{
+public class NBAPlayer extends PlayerA implements Player{
     private final String name;
     private final int stats;
     private  final String sport;
@@ -34,6 +34,22 @@ public class NBAPlayer implements Player{
 
     @Override
     public String getSport() {
+        return sport;
+    }
+
+    /**
+     * @return stats
+     */
+    @Override
+    int getStatsA() {
+        return stats;
+    }
+
+    /**
+     * @return sport
+     */
+    @Override
+    String getSportA() {
         return sport;
     }
 }

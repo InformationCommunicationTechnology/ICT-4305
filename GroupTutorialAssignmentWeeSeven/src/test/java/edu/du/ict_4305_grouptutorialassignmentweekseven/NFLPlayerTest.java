@@ -31,4 +31,12 @@ public class NFLPlayerTest {
       @Test
       public void getSport() {
       }
+
+      @Test
+      public void getStatsA() {
+      }
+
+      @Test
+      public void getSportA() {
+      }
 }
