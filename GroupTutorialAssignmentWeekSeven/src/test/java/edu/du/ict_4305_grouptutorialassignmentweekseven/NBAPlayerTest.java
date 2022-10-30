@@ -9,10 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
- * @Date: 10/26/22
  * @author lutherchikumba
- *
+ * @Date: 10/26/22
  */
 public class NBAPlayerTest {
       NBAPlayer nbaPlayer;
@@ -27,32 +25,33 @@ public class NBAPlayerTest {
                   return "NBA";
             }
       };
+
       public NBAPlayerTest() {
-            nbaPlayer = new NBAPlayer("name",56,"NBA");
+            nbaPlayer = new NBAPlayer("name", 56, "NBA");
       }
 
       @Test
       public void getName() {
-            assertEquals("name",nbaPlayer.getName());
+            assertEquals("name", nbaPlayer.getName());
       }
 
       @Test
       public void getStats() {
-            assertEquals(56,nbaPlayer.getStats());
+            assertEquals(56, nbaPlayer.getStats());
       }
 
       @Test
       public void getSport() {
-            assertEquals("NBA",nbaPlayer.getSport());
+            assertEquals("NBA", nbaPlayer.getSport());
       }
 
       @Test
       public void getStatsA() {
-            assertEquals(57,playerA.getStatsA());
+            assertEquals(57, playerA.getStatsA());
       }
 
       @Test
       public void getSportA() {
-            assertEquals("NBA",playerA.getSportA());
+            assertEquals("NBA", playerA.getSportA());
       }
 }
