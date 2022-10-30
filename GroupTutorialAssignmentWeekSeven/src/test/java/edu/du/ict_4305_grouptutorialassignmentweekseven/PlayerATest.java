@@ -1,6 +1,6 @@
 package edu.du.ict_4305_grouptutorialassignmentweekseven; /**
  * @Course: ICT 4305
- * @Project: GroupTutorialAssignmentWeeSeven
+ * @Project: GroupTutorialAssignmentWeekSeven
  * @Instructor: Dr. Sherri Maciosek
  */
 
@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @Date: 10/26/22
+ * @Date: 10/27/22
  * @author lutherchikumba
  *
  */
