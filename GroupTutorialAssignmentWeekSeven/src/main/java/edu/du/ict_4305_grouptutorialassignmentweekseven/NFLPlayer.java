@@ -6,16 +6,14 @@
 package edu.du.ict_4305_grouptutorialassignmentweekseven;
 
 /**
- *
- * @Date: 10/26/22
  * @author lutherchikumba
- *
+ * @Date: 10/26/22
  */
-public class NFLPlayer extends PlayerA implements Player{
+public class NFLPlayer extends PlayerA implements Player {
 
       private final String name;
       private final int stats;
-      private  final String sport;
+      private final String sport;
 
       public NFLPlayer(String name, int stats, String sport) {
             this.name = name;
