@@ -2,3 +2,7 @@
 /GroupTutorialAssignmentWeekFour/nbproject/
 GroupTutorialAssignmentWeekSeven/target/
 GroupTutorialAssignmentWeekSeven/.idea/
+.idea/aws.xml
+.idea/workspace.xml
+*.xml
+*.iml
