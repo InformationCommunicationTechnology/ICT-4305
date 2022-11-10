@@ -137,6 +137,21 @@ public class Contact extends JFrame implements ActionListener {
             setVisible(true);
       }
 
+      @Override
+      public String toString() {
+            return "Contact{" +
+                    "tname=" + tname +
+                    ", temail=" + temail +
+                    ", tmno=" + tmno +
+                    ", tadd=" + tadd +
+                    ", sub=" + sub +
+                    ", reset=" + reset +
+                    ", tout=" + tout +
+                    ", res=" + res +
+                    ", resadd=" + resadd +
+                    '}';
+      }
+
       /**
        * method actionPerformed()
        * to get the action performed
@@ -189,6 +204,7 @@ public class Contact extends JFrame implements ActionListener {
             } catch (FileNotFoundException ex) {
                   throw new RuntimeException(ex);
             }
+
       }
 
       /**
